@@ -180,7 +180,11 @@
     <Compile Include="Assets\PubNub\Workers\NonSubscribeWorker.cs" />
     <Compile Include="Assets\PubNub\Workers\PresenceHeartbeatWorker.cs" />
     <Compile Include="Assets\PubNub\Workers\SubscriptionWorker.cs" />
+    <Compile Include="Assets\pubnubscript.cs" />
     <Compile Include="Assets\Scripts\SendMessage.cs" />
+    <Compile Include="Assets\Scripts\SimpleJSON.cs" />
+    <Compile Include="Assets\Scripts\SimpleJSONBinary.cs" />
+    <Compile Include="Assets\Scripts\SimpleJSONUnity.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/schuetz/Desktop/Unity-PubNub-Chat/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

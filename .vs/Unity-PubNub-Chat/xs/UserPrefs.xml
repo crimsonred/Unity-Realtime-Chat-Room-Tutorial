@@ -1,15 +1,17 @@
 ﻿<Properties StartupConfiguration="{F7F439E3-B3F4-80E9-CA9D-4E47D226EE56}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/sendMessage.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/pubnubscript.cs">
     <Files>
       <File FileName="Assets/PubNub/PlayModeTests/PlayModeTests.cs" Line="4" Column="13" />
-      <File FileName="Assets/Scripts/NewBehaviourScript.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/sendMessage.cs" Line="14" Column="3" />
+      <File FileName="Assets/Scripts/SendMessage.cs" Line="14" Column="25" />
+      <File FileName="Assets/pubnubscript.cs" Line="69" Column="42" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/schuetz/Desktop/Unity-PubNub-Chat/Assets/pubnubscript.cs" relfile="Assets/pubnubscript.cs" line="55" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
