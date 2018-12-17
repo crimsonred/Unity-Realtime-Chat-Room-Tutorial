@@ -38,6 +38,7 @@ public class pubnubscript : MonoBehaviour
        .WithPresence()
        .Execute();
 
+  
         int ct = 1;
         pubnub.SusbcribeCallback += (sender, e) =>
         {
@@ -49,22 +50,22 @@ public class pubnubscript : MonoBehaviour
             {
                 //Debug.Log(message.MessageResult.Payload);
 
-                Debug.Log(message.MessageResult.Timetoken);
-                JSONObject playerJson = (JSONObject)JSON.Parse(message.MessageResult.Payload.ToString());
-                Debug.Log(playerJson["username"]);
+             //   Debug.Log(message.MessageResult.Timetoken);
+             //   JSONObject playerJson = (JSONObject)JSON.Parse(message.MessageResult.Payload.ToString());
+             //   Debug.Log(playerJson["username"]);
 
 
-                string usernameText = playerJson["username"];
-                string inputText = playerJson["text"];
+             //   string usernameText = playerJson["username"];
+             //   string inputText = playerJson["text"];
 
 
-                Text tempTextBox = Instantiate(hello) as Text;
-             //Parent to the panel
-                tempTextBox.transform.SetParent(renderCanvas.transform, false);
-                //Set the text box's text element font size and style:
-                // tempTextBox.fontSize = 12;
-                //Set the text box's text element to the current textToDisplay:
-                tempTextBox.text = "text";
+             //   Text tempTextBox = Instantiate(hello) as Text;
+             ////Parent to the panel
+                //tempTextBox.transform.SetParent(renderCanvas.transform, false);
+                ////Set the text box's text element font size and style:
+                //// tempTextBox.fontSize = 12;
+                ////Set the text box's text element to the current textToDisplay:
+                //tempTextBox.text = "text";
 
             }
             if (message.PresenceEventResult != null)

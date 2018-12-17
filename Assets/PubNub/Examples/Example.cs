@@ -574,10 +574,11 @@ namespace PubNubExample
                         break;
                     }
                 }
-                if(mea.MessageResult != null){
-                    Debug.Log ("In Example, SusbcribeCallback in message" + mea.MessageResult.Channel + mea.MessageResult.Payload);
+            if (mea.MessageResult != null)
+            {
+                    Debug.Log("In Example, SusbcribeCallback in message" + mea.MessageResult.Channel + mea.MessageResult.Payload);
                     Display(string.Format("SusbcribeCallback Result: {0}", pubnub.JsonLibrary.SerializeToJsonString(mea.MessageResult.Payload)));
-                }
+            }
                 if(mea.PresenceEventResult != null){
                     Debug.Log ("In Example, SusbcribeCallback in presence" + mea.PresenceEventResult.Channel + mea.PresenceEventResult.Occupancy + mea.PresenceEventResult.Event);
                 }
