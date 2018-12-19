@@ -521,7 +521,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   username: 
   chat: 
+  customFont: {fileID: 0}
   SubmitButton: {fileID: 1246337144}
+  canvasObject: {fileID: 1971158947}
   UsernameInput: {fileID: 1636669137}
   TextInput: {fileID: 254576762}
 --- !u!20 &519420031

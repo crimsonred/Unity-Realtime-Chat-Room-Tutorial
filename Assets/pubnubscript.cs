@@ -48,25 +48,27 @@ public class pubnubscript : MonoBehaviour
             }
             if (message.MessageResult != null)
             {
-                //Debug.Log(message.MessageResult.Payload);
+                Debug.Log(message.MessageResult.Payload);
 
-             //   Debug.Log(message.MessageResult.Timetoken);
-             //   JSONObject playerJson = (JSONObject)JSON.Parse(message.MessageResult.Payload.ToString());
-             //   Debug.Log(playerJson["username"]);
+            //    Debug.Log(message.MessageResult.Timetoken);
+                Dictionary<string, object> playerJson = message.MessageResult.Payload as Dictionary<string, object>;
+                if(playerJson.ContainsKey("username")){
+                    Debug.Log(playerJson["username"]);
+                    string usernameText = playerJson["username"].ToString();
+                }
+                if(playerJson.ContainsKey("text")){
+                    string inputText = playerJson["text"].ToString();
 
 
-             //   string usernameText = playerJson["username"];
-             //   string inputText = playerJson["text"];
-
-
-             //   Text tempTextBox = Instantiate(hello) as Text;
-             ////Parent to the panel
-                //tempTextBox.transform.SetParent(renderCanvas.transform, false);
-                ////Set the text box's text element font size and style:
-                //// tempTextBox.fontSize = 12;
-                ////Set the text box's text element to the current textToDisplay:
-                //tempTextBox.text = "text";
-
+                    Text tempTextBox = Instantiate(hello) as Text;
+                    //Parent to the panel
+                    tempTextBox.transform.SetParent(renderCanvas.transform, false);
+                    //Set the text box's text element font size and style:
+                    // tempTextBox.fontSize = 12;
+                    //Set the text box's text element to the current textToDisplay:
+                    tempTextBox.text = "text";
+                }
+               //JSONObject playerJson = (JSONObject)JSON.Parse(message.MessageResult.Payload.ToString());
             }
             if (message.PresenceEventResult != null)
             {
